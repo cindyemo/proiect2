@@ -59,6 +59,18 @@ public class Main {
         Car catasCar = new Car(" VW ", "Passat");
         catasCar.afiseaza();
 
+        //exemplu clas person
+        Person bula = new Person();
+        System.out.println(bula.returnAge());
+
+        Person alinuta = new Person('f',"Alinuta","Bulinuta");
+        System.out.println(alinuta.fname+" "+alinuta.lname);
+
+        Person jon = new Person('m',"john","doe");
+        jon.afiseaza();
+        Person jean = new Person('f',"jean","doe");
+        System.out.println(jon);
     }
+
 
     }
