@@ -1,4 +1,8 @@
-
+import animale.Animal;
+import animale.Cat;
+import animale.dog;
+import sporturi.Fotbalist;
+import sporturi.Voleibalist;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -70,7 +74,54 @@ public class Main {
         jon.afiseaza();
         Person jean = new Person('f',"jean","doe");
         System.out.println(jon);
-    }
 
+        Animal dog = new Animal("Rex","black", false);
+        Animal cat = new Animal("Kitty", "orange");
+
+        dog.mananca();
+        dog.doarme();
+        System.out.println(dog.afiseazaCuloare());
+
+        cat.mananca();
+        cat.doarme();
+        System.out.println(cat.afiseazaCuloare());
+
+
+        Elev elev1 = new Elev(" Popescu Andrei ",9.68);
+        Elev elev2 = new Elev(" Ionescu Alina ",9.82);
+        elev2.medieGenerala=8.00;
+        elev2.nume=" Pop Alina ";
+        elev2.diriginte =" nou dirig ";
+
+        elev1.afisareElev();
+        elev2.afisareElev();
+
+       // System.out.println(elev1.nume+" "+elev1.medieGenerala);
+        //System.out.println(elev2.nume+" "+elev2.medieGenerala);
+
+        EchipaFotbal Romania = new EchipaFotbal(" Romania ", 3);
+        EchipaFotbal Slovacia = new EchipaFotbal("Slovacia ",3);
+        Slovacia.punctaj=2;
+        EchipaFotbal.campionat="UEFA";
+        Slovacia.nume="Slovacia este Eliminata din UEFA";
+
+        Romania.afisare();
+        Slovacia.afisare();
+
+        EchipaFotbal.metodaStatica();
+
+        Fotbalist fotbalist1= new Fotbalist("Hagi");
+        Voleibalist voleibalist1 = new Voleibalist();
+
+        fotbalist1.seAntreneaza();
+        fotbalist1.seRecupereaza();
+        voleibalist1.seAntreneaza();
+        voleibalist1.seRecupereaza();
+
+        Cat cat1 = new Cat("Tom", "orange", false, "terestru");
+        cat1.scoateSunete();
+        dog dog1 = new dog("Aki","brown", false, "terestru");
+        dog1.scoateSunete();
+        }
 
     }
