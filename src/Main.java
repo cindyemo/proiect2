@@ -122,6 +122,14 @@ public class Main {
         cat1.scoateSunete();
         dog dog1 = new dog("Aki","brown", false, "terestru");
         dog1.scoateSunete();
+
+        Movie movie1 = new Movie();
+        movie1.setTitlu(" Titanic ");
+        movie1.setTipFilm(" drama ");
+        movie1.setIMBBrating(8.7);
+        System.out.println(movie1.getTitlu()+ movie1.getTipFilm()+movie1.getIMBBrating());
+
+        fotbalist1.afiseazaDinSuperclasa();
         }
 
     }
